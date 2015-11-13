@@ -1,11 +1,11 @@
 # Settings for the app
 app:
   # HTML Title
-  title: _(Participatory Budgeting Long Beach)
+  title: _(Participatory Budgeting Greensboro)
   # Header name
-  name: _(Participatory Budgeting Long Beach)
+  name: _(Participatory Budgeting Greensboro)
   # Meta description that will show up in Google search results
-  meta_description: _(Participatory Budgeting for Long Beach)
+  meta_description: _(Participatory Budgeting for City of Greensboro)
   district:
   tagline: _(How would YOU spend $250K?)
 
