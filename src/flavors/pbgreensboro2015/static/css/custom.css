@@ -8,22 +8,43 @@ body, select, input, textarea {
 }
 label { font-size: 1em; text-transform: none; color: #555; }
 
+h1 {
+  font-family: "brandon-grotesque";
+  font-weight: 400;
+  color: #336e94;
+  line-height: 1.0;
+  padding: 10px 0px 15px 0px;
+}
+
+h2, h3, h4, h5 {
+  font-family: "brandon-grotesque";
+  font-weight: 400;
+  line-height: 1.0;
+  color: #336e94;
+}
+
+li.clearfix {
+  font-family: "brandon-grotesque";
+  font-weight: 400;
+  color: #000000;
+}
+
 /* Buttons */
 .btn,
 .btn:visited,
 .btn:link {
-  background-color: #68bab9;
+  background-color: #336e94;
   color: #fff;
 }
 .btn:hover, .button:hover, button:hover {
-  background-color: #e28623;
+  background-color: #336e94;
 }
 .btn-primary, .btn-primary:visited, .btn-primary:link {
-  background-color: #68bab9;
+  background-color: #336e94;
   color: #fff;
 }
 .btn-primary:hover {
-  background-color: #e28623;
+  background-color: #336e94;
 }
 .btn-secondary,
 .btn-secondary:visited,
@@ -32,7 +53,7 @@ label { font-size: 1em; text-transform: none; color: #555; }
   color: #fff;
 }
 .btn-secondary:hover {
-  background-color: #e28623;
+  background-color: #336e94;
   color: #fff;
 }
 
@@ -87,15 +108,15 @@ textarea:focus {
   border: 0;
 }
 .access a:hover {
-  background-color: #58585b;
-  color: #e6eef2;
+  background-color: #336e94;
+  color: #336e94;
 }
 #auth-nav-container {}
 a#sign-in-btn {
   color: #68bab9;
 }
 a#sign-in-btn:hover {
-  color: #e28623;
+  color: #336e94;
 }
 
 
