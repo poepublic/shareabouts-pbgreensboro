@@ -2,8 +2,9 @@
 {% load i18n %}
 
 {% block site-title %}
-<a href="http://www.pblongbeach.org/" target="_blank"><img id="site-logo" src="/static/css/images/pbgreensboro-logobanner.png"></a>
+<a href="http://www.greensboro-nc.gov/index.aspx?page=4796"><img id="site-logo" src="/static/css/images/pbgreensboro-logobanner.png"></a>
 
+<!--Typekit embed code-->
 <script src="https://use.typekit.net/mon5qsx.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 {% endblock %}
@@ -105,10 +106,7 @@ Shareabouts.PlaceFormView.prototype.setLocation = function(locationData) {
   (function(NS, $) {
 
     $(Shareabouts).on('panelshow', function(evt, app, path) {
-      $( "<br/><br/>{% trans '<h5>Thanks!</h5> <p>The following questions are <strong>optional</strong> and will help us to assess whether these maps are reaching the full diversity of our community:' %}</p>" ).insertAfter( "#place-private-phone" );
-      $( "<br/><small>{% trans 'Note: Council district staff will review idea categories and make any revisions as needed.' %}</small>" ).insertAfter( "#place-location_type" );
-      var firstRaceItem = $('#place-private-race-amerind').parent('p');
-      $( "<br/><label>{% trans 'Your Race/Ethnicity:' %}</label>" ).insertBefore(firstRaceItem);
+      // $( "<br/><small>{% trans 'Note: Council district staff will review idea categories and make any revisions as needed.' %}</small>" ).insertAfter( "#place-location_type" );
     });
 
     var originalOnMarkerClick = Shareabouts.LayerView.prototype.onMarkerClick;
