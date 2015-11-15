@@ -16,9 +16,10 @@ h1 {
   padding: 10px 0px 15px 0px;
 }
 
-h5 {
+h2, h3, h4, h5 {
   font-family: "brandon-grotesque";
   font-weight: 400;
+  line-height: 1.0;
   color: #336e94;
 }
 
@@ -32,14 +33,14 @@ li.clearfix {
 .btn,
 .btn:visited,
 .btn:link {
-  background-color: #68bab9;
+  background-color: #336e94;
   color: #fff;
 }
 .btn:hover, .button:hover, button:hover {
   background-color: #336e94;
 }
 .btn-primary, .btn-primary:visited, .btn-primary:link {
-  background-color: #68bab9;
+  background-color: #336e94;
   color: #fff;
 }
 .btn-primary:hover {
