@@ -7,7 +7,7 @@ app:
   # Meta description that will show up in Google search results
   meta_description: _(Participatory Budgeting for City of Greensboro)
   district:
-  tagline: _(How would YOU spend $250K?)
+  tagline: _(How would YOU spend $100K?)
 
 languages:
   - code: en
