@@ -44,7 +44,7 @@ place_types:
 
 # Icons for previous winners and current submissions
   culture:
-    label: _(Culture & Community Facilities)
+    label: _(Art & Culture)
     rules:
       - condition: '"{{location_type}}" === "culture" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
@@ -64,22 +64,22 @@ place_types:
 
       - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/new/dot-aa3c1e.png
+          iconUrl: /static/css/images/markers/new/dot-b75ab8.png
           iconSize: [15, 15]
           iconAnchor: [8, 8]
       - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 17'
         icon:
-          iconUrl: /static/css/images/markers/new/facilities-small.png
+          iconUrl: /static/css/images/markers/new/fountain-small.png
           iconSize: [25, 30]
           iconAnchor: [13, 30]
       - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false && {{map.zoom}} >= 17'
         icon:
-          iconUrl: /static/css/images/markers/new/facilities-small.png
+          iconUrl: /static/css/images/markers/new/fountain-small.png
           iconSize: [40, 48]
           iconAnchor: [20, 48]
       - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === true'
         icon:
-          iconUrl: /static/css/images/markers/new/facilities.png
+          iconUrl: /static/css/images/markers/new/fountain.png
           shadowUrl: /static/css/images/markers/new/marker-shadow.png
           iconSize: [75, 90]
           shadowSize: [41, 41]
@@ -212,7 +212,7 @@ place_types:
           iconAnchor: [38, 90]
 
   health:
-    label: _(Public Health & Safety)
+    label: _(Public Health)
     rules:
       - condition: '"{{location_type}}" === "health" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
@@ -337,43 +337,85 @@ place_types:
           shadowSize: [41, 41]
           iconAnchor: [38, 90]
 
-  transit:
-    label: _(Transit)
+  safety:
+    label: _(Safety & Environment)
     rules:
-      - condition: '"{{location_type}}" === "transit" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
+      - condition: '"{{location_type}}" === "safety" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
           iconUrl: /static/css/images/markers/new/dot-white.png
           iconSize: [11, 11]
           iconAnchor: [6, 6]
-      - condition: '"{{location_type}}" === "transit" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 17'
+      - condition: '"{{location_type}}" === "safety" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 17'
         icon:
           iconUrl: /static/css/images/markers/new/dot-white.png
           iconSize: [15, 15]
           iconAnchor: [8, 8]
-      - condition: '"{{location_type}}" === "transit" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 17'
+      - condition: '"{{location_type}}" === "safety" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 17'
         icon:
           iconUrl: /static/css/images/markers/new/dot-white.png
           iconSize: [20, 20]
           iconAnchor: [10, 10]
 
-      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} === false && {{map.zoom}} < 14'
+      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/new/dot-b75ab8.png
+          iconUrl: /static/css/images/markers/new/dot-fc9229.png
           iconSize: [15, 15]
           iconAnchor: [8, 8]
-      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 17'
+      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 17'
         icon:
-          iconUrl: /static/css/images/markers/new/transit-small.png
+          iconUrl: /static/css/images/markers/new/safety-small.png
           iconSize: [25, 30]
           iconAnchor: [13, 30]
-      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} === false && {{map.zoom}} >= 17'
+      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === false && {{map.zoom}} >= 17'
         icon:
-          iconUrl: /static/css/images/markers/new/transit-small.png
+          iconUrl: /static/css/images/markers/new/safety-small.png
           iconSize: [40, 48]
           iconAnchor: [20, 48]
-      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} === true'
+      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === true'
         icon:
-          iconUrl: /static/css/images/markers/new/transit.png
+          iconUrl: /static/css/images/markers/new/safety.png
+          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
+
+  other:
+    label: _(Other Idea)
+    rules:
+      - condition: '"{{location_type}}" === "other" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [11, 11]
+          iconAnchor: [6, 6]
+      - condition: '"{{location_type}}" === "other" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 17'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "other" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 17'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
+
+      - condition: '"{{location_type}}" === "other" && {{layer.focused}} === false && {{map.zoom}} < 14'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-ffd614.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "other" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 17'
+        icon:
+          iconUrl: /static/css/images/markers/new/idea-small.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "other" && {{layer.focused}} === false && {{map.zoom}} >= 17'
+        icon:
+          iconUrl: /static/css/images/markers/new/idea-small.png
+          iconSize: [40, 48]
+          iconAnchor: [20, 48]
+      - condition: '"{{location_type}}" === "other" && {{layer.focused}} === true'
+        icon:
+          iconUrl: /static/css/images/markers/new/idea.png
           shadowUrl: /static/css/images/markers/new/marker-shadow.png
           iconSize: [75, 90]
           shadowSize: [41, 41]
@@ -423,7 +465,7 @@ place_types:
 
 # Icons for new additions
   culture-shortlisted:
-    label: _(Culture & Community Facilities)
+    label: _(Art & Culture)
     rules:
       - condition: 'true'
         icon:
@@ -609,18 +651,18 @@ place:
       options:
         - label: _(Please choose...)
           value:
-        - label: _(Culture & Community Facilities)
+        - label: _(Arts & Culture)
           value: culture
-        - label: _(Education)
-          value: education
-        - label: _(Environment)
-          value: environment
         - label: _(Parks & Recreation)
           value: parks
-        - label: _(Public Health & Safety)
-          value: health
         - label: _(Streets & Sidewalks)
           value: streets
+        - label: _(Public Health)
+          value: health
+        - label: _(Safety & Environment)
+          value: safety
+        - label: _(Other)
+          value: other
       name: location_type
     - prompt: _(Your Name (required, will be shown on the map))
       type: text
