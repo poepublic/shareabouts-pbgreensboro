@@ -440,3 +440,9 @@ p.checkbox + p.select {
     font-size: 0.875em;
   }
 }
+
+.closed-district {
+  color: red;
+  font-size: 0.8em;
+  font-style: italic;
+}
