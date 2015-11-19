@@ -23,7 +23,9 @@ map:
   geolocation_onload: false
 
   geocoding_enabled: true
+  geocoding_engine: Mapbox
   geocode_field_label: _(Enter an address...)
+  geocode_hint: [-79.82, 36.07]
   options:
     center:
       lat: 36.07
