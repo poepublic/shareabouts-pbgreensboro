@@ -690,6 +690,13 @@ place:
       attrs:
         - key: size
           value: 10
+    - prompt: _(I'd like to volunteer as a Budget Delegate)
+      type: checkbox
+      name: private-volunteer
+      help_text: _(Budget Delegates will meet 6 - 8 times from December through June​ to evaluate project ideas, work with city staff to research the projects and will receive training and support to develop proposals for the ballot.)
+      attrs:
+        - key: value
+          value: _(Volunteer)
 
     # - prompt: _(Your Age)
     #   type: text
@@ -765,12 +772,6 @@ place:
     #       value: 150ormore
     #   name: private-income
     #   sticky: true
-    # - prompt: _(I'd like to volunteer)
-    #   type: checkbox
-    #   name: private-volunteer
-    #   attrs:
-    #     - key: value
-    #       value: _(Volunteer)
 
 survey:
   submission_type: comments
