@@ -452,27 +452,3 @@ p.checkbox + p.select {
   font-size: 0.8em;
   font-style: italic;
 }
-
-
-#auth-nav-container {
-  display: none;
-}
-.or-sign-in {
-  display: none;
-}
-div #reply {
-  display: none;
-}
-a.reply-link.btn.btn-small {
-  display: none;
-}
-
-.support .user-support:hover {
-  background-color: #336e94;
-  color: #fff;
-  cursor: default;
-}
-.support .user-support:hover label {
-  background-color: transparent;
-  color: inherit;
-}
